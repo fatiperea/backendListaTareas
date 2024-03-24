@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Backend de lista de tareas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
-
   },
   "keywords": [],
   "author": "Perea Fátima",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
 }
