@@ -4,7 +4,7 @@ import cors from 'cors'
 import morgan from 'morgan'
 import path from 'path'
 import { fileURLToPath } from 'url'
-
+import router from './source/routes/tareas.routes.js'
 
 
 const app=express()
@@ -26,10 +26,14 @@ const __filename= fileURLToPath(import.meta.url)
 const __dirname=path.dirname(__filename)
 
 
-
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res)=>{
+app.use('/api',router)
+
+
+/*app.get('/', (req, res)=>{
 
     res.send("respuesta backend")
-})
+
+})*/
+
