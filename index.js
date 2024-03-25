@@ -6,6 +6,8 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import router from './source/routes/tareas.routes.js'
 
+import './source/database/database.js'
+
 
 const app=express()
 
